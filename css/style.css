@@ -46,10 +46,10 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
-.visually-hidden{
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -63,7 +63,6 @@ select {
 .container {
     max-width: 1160px;
     margin: 0 auto;
-    
 }
 /* font-family: 'Raleway', sans-serif; */
 body {
@@ -76,17 +75,106 @@ body {
 }
 .header__main {
     position: relative;
-    margin: 0 60px;
-    background-color: #FFE17F;
+    padding: 0 60px;
+    background-color: #ffe17f;
     margin-top: 23px;
 }
-.header__logo{
-    /* position: absolute;
+.header__logo {
+    position: absolute;
     width: 145px;
     height: 36px;
-    top: 0;
-    left: 0; */
+    top: -23px;
 }
+.header__nav {
+    display: flex;
+    padding: 49px 0 20px 0;
+    justify-content: space-between;
+}
+.form__search {
+    position: relative;
 
-
-
+}
+.form__search input,
+.form__search button {
+    background: transparent;
+    border: none;
+}
+.form__search::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: 0;
+}
+.search__field {
+    min-width: 480px;
+    margin-right: 24px;
+    height: 20px;
+    padding-left: 36px;
+}
+.search__field placeholder {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3);
+}
+.search__field placeholder{
+    color: rgba(0, 0, 0, 0.6);
+}
+.header__login {
+    position: relative;
+    margin-right: 187px;
+    padding-left: 25px;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+}
+.header__login::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    background-image: url(../img/user.svg);
+    background-repeat: no-repeat;
+    top: 2px;
+    left: 0;
+}
+.header__comparison {
+    position: relative;
+    margin-right: 39px;
+    padding-left: 20px;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+}
+.header__comparison::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/compare.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 12px;
+    top: 2px;
+    left: 0;
+}
+.header__basket {
+    position: relative;
+    padding-left: 42px;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+}
+.header__basket::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/basket.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 14px;
+    top: 0;
+    left: 15px;
+}

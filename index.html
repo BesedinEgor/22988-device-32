@@ -18,8 +18,25 @@
         <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
         <img class="header__logo" src="img/device-logo.svg" alt="Логотип интернет-магазина DEVICE" width="145"
           height="36">
-          <p class="header__menu">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
-              href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+        <ul class="header__nav">
+          <li class="header__nav-list">
+            <form class="form__search" action="#">
+              <label for="search">
+                <input class="search__field" type="search" name="search" id="search" placeholder="Поиск по сайту">
+                <button class="search__submit" type="submit"></button>
+              </label>
+            </form>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__login" href="#">Войти</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__comparison" href="#">Сравнить</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__basket" href="#">Корзина</a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
