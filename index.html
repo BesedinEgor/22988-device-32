@@ -57,41 +57,41 @@
   <main class="main-index">
     <section class="slider">
       <h2 class="visually-hidden">Галерея товар интернет-магазина гаджетов DEVICE</h2>
+      <div class="slider__element">
+        <button class="slider__button slider__prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider__button slider__next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+        <ol class="slider__pagination">
+          <li class="slider__pagination-item">
+            <button class="slider__pagination-button slider__pagination-active">
+              <span class="visually-hidden">1 слайд</span>
+            </button>
+          </li>
+          <li class="slider__pagination-item">
+            <button class="slider__pagination-button">
+              <span class="visually-hidden">2 слайд</span>
+            </button>
+          </li>
+          <li class="slider__pagination-item">
+            <button class="slider__pagination-button">
+              <span class="visually-hidden">3 слайд</span>
+            </button>
+          </li>
+        </ol>
+      </div>
       <ul class="slider__items">
         <li class="slider__item">
-          <div class="slider__element">
-            <img src="" alt="виды товаров" class="slider__images">
-            <button class="slider__button slider__prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider__button slider__next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
           <div class="slider__content">
+            <img src="" alt="виды товаров" class="slider__images">
             <h3 class="slider__title">Порхает как бабочка,
               жалит как пчела!</h3>
             <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.
             </p>
             <a class="button slider__button" href="#">Подробнее</a>
-            <ol class="slider__pagination">
-              <li class="slider__pagination-item">
-                <button class="slider__pagination-button slider__pagination-active">
-                  <span class="visually-hidden">1 слайд</span>
-                </button>
-              </li>
-              <li class="slider__pagination-item">
-                <button class="slider__pagination-button">
-                  <span class="visually-hidden">2 слайд</span>
-                </button>
-              </li>
-              <li class="slider__pagination-item">
-                <button class="slider__pagination-button">
-                  <span class="visually-hidden">3 слайд</span>
-                </button>
-              </li>
-            </ol>
             <div class="slider__element-info">
               <b class="element__specifications">800 м</b>
               <p class="element__specification-text">Дальность полета</p>
@@ -101,15 +101,7 @@
           </div>
         </li>
         <li class="slider__item">
-          <div class="slider__element">
-            <img src="" alt="виды товаров" class="slider__images">
-            <button class="slider__button slider__prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider__button slider__next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
+          <img src="" alt="виды товаров" class="slider__images">
           <div class="slider__content">
             <h3 class="slider__title">Худеем
               правильно!</h3>
@@ -141,15 +133,7 @@
           </div>
         </li>
         <li class="slider__item">
-          <div class="slider__element">
-            <img src="" alt="виды товаров" class="slider__images">
-            <button class="slider__button slider__prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider__button slider__next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
+          <img src="" alt="виды товаров" class="slider__images">
           <div class="slider__content">
             <h3 class="slider__title">Делай селфи,
               как Бен Стиллер! </h3>
@@ -157,23 +141,6 @@
               Карл!) метров длиной и весом всего 5 кг.
             </p>
             <a class="button slider__button" href="#">Подробнее</a>
-            <ol class="slider__pagination">
-              <li class="slider__pagination-item">
-                <button class="slider__pagination-button>
-                  <span class=" visually-hidden">1 слайд</span>
-                </button>
-              </li>
-              <li class="slider__pagination-item">
-                <button class="slider__pagination-button>
-                  <span class=" visually-hidden">2 слайд</span>
-                </button>
-              </li>
-              <li class="slider__pagination-item">
-                <button class="slider__pagination-button slider__pagination-active">
-                  <span class="visually-hidden">3 слайд</span>
-                </button>
-              </li>
-            </ol>
             <div class="slider__element-info">
               <b class="element__specifications">8,5 м</b>
               <p class="element__specification-text">Длина палки</p>
@@ -274,29 +241,29 @@
       </ul>
     </section>
 
-    <section class="about">
+    <section class="company-info">
       <div class="about__delivery">
         <b class="about__delivery-description">Доставим редкий товар под заказ</b>
       </div>
-      <div class="about-container">
-        <h2 class="about-container__title">О нас</h2>
-        <p class="about-container__text">Огромный выбор гаджетов не оставит равнодушным гика,
+      <div class="about-us">
+        <h2 class="about-us__title">О нас</h2>
+        <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика,
           который есть в каждом из нас.
         </p>
-        <p class="about-container__text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+        <p class="about-us__text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
           компаниями:</p>
-        <ul class="about-container__list">
-          <li class="about-container__item">
-            <b class="about-container__company">Меловые линии</b>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <b class="about-us__company">Меловые линии</b>
           </li>
-          <li class="about-container__item">
-            <b class="about-container__company">СДИК</b>
+          <li class="about-us__item">
+            <b class="about-us__company">СДИК</b>
           </li>
-          <li class="about-container__item">
-            <b class="about-container__company">ТоксБерри</b>
+          <li class="about-us__item">
+            <b class="about-us__company">ТоксБерри</b>
           </li>
         </ul>
-        <a class="button about-container__button" href="#">Подробнее о нас</a>
+        <a class="button about-us__button" href="#">Подробнее о нас</a>
       </div>
       <div class="contacts">
         <h2 class="contacts__title">Контакты</h2>
