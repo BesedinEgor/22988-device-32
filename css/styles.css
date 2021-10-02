@@ -1,0 +1,39 @@
+body{
+    background-color: #fff;
+}
+.header,
+.header-catalog{
+
+    background-color: #FFE17F;
+}
+
+.services{
+    background-color: #F0F0F0;
+}
+
+.distribution{
+    background-color: #F0F0F0;
+}
+
+.page-footer{
+    background-color: #444444;
+}
+
+.catalog__settings{
+    background-color: #EBEBEB;
+}
+.catalog__filter{
+    background-color: #DCDCDC;
+}
+
+.sort___form{
+    background-color: #EBEBEB;
+}
+
+.pagination{
+    background-color: #EBEBEB;
+}
+
+.footer-catalog{
+    background-color: #444444;
+}
