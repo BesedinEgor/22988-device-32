@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url(fonts/raleway/raleway-800.woff2) format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url(..fonts/rubik/rubik-400.woff2) format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/rubik/rubik-700.woff2) format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url(fonts/rubik/rubik-800.woff2) format("woff2");
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.button,
+.services__title-item {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+body {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    background-color: #fff;
+}
+.header,
+.header-catalog {
+    color: #000;
+    background-color: #ffe17f;
+}
+.header__nav a {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #000;
+}
+.header__user {
+    font-size: 16px;
+    line-height: 19px;
+}
+.header__login {
+    color: rgba(0, 0, 0, 0.3);
+}
+.search__field placeholder {
+    font-family: "rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+.header__menu a,
+.footer__menu a {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.title {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000;
+}
+.slider{
+    color: #000;
+}
+.element__specifications {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+}
+.element__specification-text {
+    font-size: 16px;
+}
+.products{
+    color: #000;
+}
+.products h3 {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.services {
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+.services__title-item--active {
+    color: #ffe17f;
+    background-color: #000;
+}
+.services__title {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+.services__text{
+    color: #444444;
+}
+.about__delivery {
+    background-color: #f0f0f0;
+    color: #000;
+}
+.about__delivery-description {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: inherit;
+}
+.about-us__company {
+    font-weight: 800;
+    line-height: 20px;
+    color: #000;
+}
+
+.contacts__subtitle {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.distribution {
+    background-color: #f0f0f0;
+}
+.distribution__input {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    opacity: 0.5;
+}
+.distribution__btn {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.footer {
+    color: #fff;
+    background-color: #444444;
+}
+.contacts__adress {
+    font-size: 16px;
+    line-height: 19px;
+    color: inhetir;
+    font-style: normal;
+}
+.contacts__phone {
+    text-align: right;
+}
+
+.breadcrumbs__link {
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog__settings {
+    color: #000;
+    background-color: #ebebeb;
+}
+.catalog__filter,
+.sort___form label,
+.pagination__link {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: inherit;
+    background-color: #dcdcdc;
+}
+legend {
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+.range-toggle,
+.catalog__filter-group label {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: none;
+    letter-spacing: 0;
+}
+.control__label {
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+}
+
+.sort___form {
+    color: #000;
+    background-color: #ebebeb;
+}
+.sort___form label {
+    background-color: inherit;
+}
+.select__control option {
+    font-size: 16px;
+    line-height: 19px;
+}
+.product-card-price {
+    line-height: 21px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.pagination {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #ebebeb;
+}
+.pagination__link {
+    background: none;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+}
+.pagination-prev,
+.pagination__next {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+}
+
+.footer-catalog {
+    color: #fff;
+    background-color: #444444;
+}
