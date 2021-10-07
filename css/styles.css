@@ -2,28 +2,28 @@
     font-family: "raleway";
     font-style: normal;
     font-weight: 800;
-    src: url(fonts/raleway/raleway-800.woff2) format("woff2");
+    src: url("..fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "rubik";
     font-style: normal;
     font-weight: 400;
-    src: url(..fonts/rubik/rubik-400.woff2) format("woff2");
+    src: url("..fonts/rubik/rubik-400.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "rubik";
     font-style: normal;
     font-weight: 700;
-    src: url(fonts/rubik/rubik-700.woff2) format("woff2");
+    src: url("..fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "rubik";
     font-style: normal;
     font-weight: 800;
-    src: url(fonts/rubik/rubik-800.woff2) format("woff2");
+    src: url("..fonts/rubik/rubik-800.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -42,15 +42,14 @@ a {
     color: inherit;
 }
 
-li {
-    list-style: none;
-}
-
 img {
     max-width: 100%;
-    display: block;
+    object-fit: contain;
 }
 
+.reset{
+    list-style: none;
+}
 .button,
 .services__title-item {
     font-family: "raleway", sans-serif;
@@ -62,6 +61,7 @@ img {
     text-transform: uppercase;
     color: #000;
 }
+
 body {
     font-family: "rubik", sans-serif;
     font-weight: 400;
@@ -70,14 +70,26 @@ body {
     color: #444444;
     background-color: #fff;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+
 .header,
 .header-catalog {
     color: #000;
     background-color: #ffe17f;
 }
 .header__nav a {
-    font-family: "rubik", sans-serif;
-    font-weight: 400;
+    font-family: inherit;
     font-size: 16px;
     line-height: 19px;
     text-decoration: none;
@@ -90,11 +102,13 @@ body {
 .header__login {
     color: rgba(0, 0, 0, 0.3);
 }
-.search__field placeholder {
+
+.search__field::placeholder{
     font-family: "rubik", sans-serif;
     font-size: 16px;
     line-height: 19px;
 }
+
 .header__menu a,
 .footer__menu a {
     font-family: "raleway", sans-serif;
@@ -125,6 +139,9 @@ body {
 .products{
     color: #000;
 }
+.product__item{
+    background-color: #FFE17F;
+}
 .products h3 {
     font-family: "raleway", sans-serif;
     font-weight: 800;
@@ -142,12 +159,6 @@ body {
 .services__title-item--active {
     color: #ffe17f;
     background-color: #000;
-}
-.services__title {
-    font-family: "raleway", sans-serif;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 50px;
 }
 .services__text{
     color: #444444;
@@ -180,7 +191,7 @@ body {
 .distribution {
     background-color: #f0f0f0;
 }
-.distribution__input {
+.distribution__input::placeholder {
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
