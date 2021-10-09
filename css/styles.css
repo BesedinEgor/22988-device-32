@@ -2,28 +2,28 @@
     font-family: "raleway";
     font-style: normal;
     font-weight: 800;
-    src: url("..fonts/raleway/raleway-800.woff2") format("woff2");
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "rubik";
     font-style: normal;
     font-weight: 400;
-    src: url("..fonts/rubik/rubik-400.woff2") format("woff2");
+    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "rubik";
     font-style: normal;
     font-weight: 700;
-    src: url("..fonts/rubik/rubik-700.woff2") format("woff2");
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "rubik";
     font-style: normal;
     font-weight: 800;
-    src: url("..fonts/rubik/rubik-800.woff2") format("woff2");
+    src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -47,7 +47,7 @@ img {
     object-fit: contain;
 }
 
-.reset{
+.list-style-reset{
     list-style: none;
 }
 .button,
@@ -102,14 +102,9 @@ body {
 .header__login {
     color: rgba(0, 0, 0, 0.3);
 }
-
-.search__field{
-    font-family: "rubik", sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-}
+.search__field,
 .search__field::placeholder{
-    font-family: "rubik", sans-serif;
+    font-family: inherit;
     font-size: 16px;
     line-height: 19px;
     color: rgba(0, 0, 0, 0.3);
@@ -197,15 +192,10 @@ body {
 .distribution {
     background-color: #f0f0f0;
 }
-.distribution__input{
-    font-family: "rubik", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-}
+
+.distribution__input,
 .distribution__input::placeholder {
-    font-family: "rubik", sans-serif;
-    font-weight: 400;
+    font-family: inherit;
     font-size: 18px;
     line-height: 30px;
     color: rgba(4, 4, 4, 0.5);
@@ -264,8 +254,7 @@ legend {
 }
 .range-toggle,
 .catalog__filter-group label {
-    font-family: "rubik", sans-serif;
-    font-weight: 400;
+    font-family: inherit;
     font-size: 15px;
     line-height: 18px;
     text-align: center;
