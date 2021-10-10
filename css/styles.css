@@ -29,6 +29,7 @@
 
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 *,
@@ -47,8 +48,10 @@ img {
     object-fit: contain;
 }
 
-.list-style-reset{
+.list-style-reset {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .button,
 .services__title-item {
@@ -63,6 +66,10 @@ img {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0 auto;
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -81,12 +88,31 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
 }
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.main-container {
+    flex-grow: 1;
+}
 
-
+.header__container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+.header {
+    width: 1160px;
+    margin: 0 auto;
+}
 .header,
 .header-catalog {
     color: #000;
     background-color: #ffe17f;
+}
+
+.header__nav,
+.menu__items {
+    display: flex;
 }
 .header__nav a {
     font-family: inherit;
@@ -103,7 +129,7 @@ body {
     color: rgba(0, 0, 0, 0.3);
 }
 .search__field,
-.search__field::placeholder{
+.search__field::placeholder {
     font-family: inherit;
     font-size: 16px;
     line-height: 19px;
@@ -125,9 +151,17 @@ body {
     font-size: 50px;
     line-height: 50px;
     color: #000;
+    margin: 0;
 }
-.slider{
+.slider {
     color: #000;
+}
+.slider__item {
+    display: flex;
+}
+.slider__content {
+    width: 560px;
+    margin-left: auto;
 }
 .element__specifications {
     font-weight: 400;
@@ -137,11 +171,16 @@ body {
 .element__specification-text {
     font-size: 16px;
 }
-.products{
+.products {
     color: #000;
 }
-.product__item{
-    background-color: #FFE17F;
+.products__list {
+    display: flex;
+    justify-content: space-between;
+}
+.products__item {
+    width: 160px;
+    background-color: #ffe17f;
 }
 .products h3 {
     font-family: "raleway", sans-serif;
@@ -156,12 +195,21 @@ body {
     color: #000;
     background-color: #f0f0f0;
 }
-
+.services__wrapper {
+    display: flex;
+}
+.services__items {
+    width: 280px;
+    margin-right: 120px;
+}
+.services__description {
+    width: 500px;
+}
 .services__title-item--active {
     color: #ffe17f;
     background-color: #000;
 }
-.services__text{
+.services__text {
     color: #444444;
 }
 .about__delivery {
@@ -169,6 +217,7 @@ body {
     color: #000;
 }
 .about__delivery-description {
+    display: block;
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 20px;
@@ -178,12 +227,22 @@ body {
     text-transform: uppercase;
     color: inherit;
 }
+.company__wrapper {
+    display: flex;
+}
+
+.about-us {
+    width: 500px;
+    margin-right: 100px;
+}
 .about-us__company {
     font-weight: 800;
     line-height: 20px;
     color: #000;
 }
-
+.contacts {
+    width: 515px;
+}
 .contacts__subtitle {
     font-weight: 800;
     font-size: 24px;
@@ -192,13 +251,27 @@ body {
 .distribution {
     background-color: #f0f0f0;
 }
-
+.distribution__mail {
+    display: flex;
+}
+.distribution__title {
+    margin-right: 40px;
+}
+.distribution__description {
+    width: 560px;
+    margin-left: auto;
+}
+.distribution__mail-subscription {
+    display: flex;
+}
 .distribution__input,
 .distribution__input::placeholder {
     font-family: inherit;
     font-size: 18px;
     line-height: 30px;
     color: rgba(4, 4, 4, 0.5);
+    width: 560px;
+    margin-right: 40px;
 }
 .distribution__btn {
     font-family: "raleway", sans-serif;
@@ -209,28 +282,45 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000;
+    margin-right: 136px;
+}
+.distribution__subscription-free {
+    margin-left: auto;
 }
 
 .footer {
     color: #fff;
     background-color: #444444;
 }
+.footer__wrapper {
+    display: flex;
+}
 .contacts__adress {
     font-size: 16px;
     line-height: 19px;
     color: inhetir;
     font-style: normal;
+    width: 240px;
+    margin: 0;
+    margin-right: 115px;
+}
+.footer-menu__items {
+    display: flex;
+    margin-right: 7px;
+}
+.footer-menu__item {
+    width: 148px;
 }
 .contacts__phone {
+    width: 293px;
     text-align: right;
+    margin-left: auto;
 }
-
 .breadcrumbs__link {
     font-size: 16px;
     line-height: 19px;
     color: rgba(0, 0, 0, 0.6);
 }
-
 .catalog__settings {
     color: #000;
     background-color: #ebebeb;
@@ -285,7 +375,6 @@ legend {
     font-weight: 400;
     text-align: right;
 }
-
 .pagination {
     color: rgba(0, 0, 0, 0.3);
     background-color: #ebebeb;
@@ -303,7 +392,6 @@ legend {
     font-weight: 800;
     letter-spacing: 0.2em;
 }
-
 .footer-catalog {
     color: #fff;
     background-color: #444444;
