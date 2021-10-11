@@ -14,53 +14,52 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__container">
-        <div class="header__main">
-          <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-          <img class="header__logo" src="img/device-logo.svg" alt="Логотип интернет-магазина DEVICE" width="145"
-            height="36">
-          <ul class="header__nav list-style-reset">
-            <li class="header__nav-list">
-              <form class="form__search" action="https://echo.htmlacademy.ru/">
-                <label for="search">
-                  <input class="search__field" type="search" name="search" id="search" placeholder="Поиск по сайту">
-                </label>
-              </form>
+      <div class="header__main">
+        <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
+        <img class="header__logo" src="img/device-logo.svg" alt="Логотип интернет-магазина DEVICE" width="145"
+          height="36">
+        <ul class="header__nav list-style-reset">
+          <li class="header__nav-list">
+            <form class="form__search" action="https://echo.htmlacademy.ru/">
+              <label for="search">
+                <input class="search__field" type="search" name="search" id="search" placeholder="Поиск по сайту">
+              </label>
+            </form>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__login" href="#">Войти</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__comparison" href="#">Сравнить</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__basket" href="#">Корзина</a>
+          </li>
+        </ul>
+        <nav class="header__menu">
+          <ul class="menu__items list-style-reset">
+            <li class="menu__item">
+              <a class="menu__item-link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="header__nav-list">
-              <a class="header__login" href="#">Войти</a>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Доставка</a>
             </li>
-            <li class="header__nav-list">
-              <a class="header__comparison" href="#">Сравнить</a>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Гарантия</a>
             </li>
-            <li class="header__nav-list">
-              <a class="header__basket" href="#">Корзина</a>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Контакты</a>
             </li>
           </ul>
-          <nav class="header__menu">
-            <ul class="menu__items list-style-reset">
-              <li class="menu__item">
-                <a class="menu__item-link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item-link" href="#">Доставка</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item-link" href="#">Гарантия</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        </nav>
       </div>
     </div>
   </header>
 
   <main class="main-container main-index">
-    <div class="container">
-      <section class="slider">
+
+    <section class="slider">
+      <div class="container">
         <h2 class="visually-hidden">Галерея товар интернет-магазина гаджетов DEVICE</h2>
         <div class="slider__element">
           <button class="slider__button slider__prev" type="button">
@@ -142,7 +141,7 @@
             </div>
           </li>
         </ul>
-    </div>
+      </div>
     </section>
 
     <section class="products">
