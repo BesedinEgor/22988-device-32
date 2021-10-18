@@ -641,7 +641,7 @@ legend {
 .pagination-prev{
     margin-right: 180px;
 }
-.pagination__next{
+.pagination__link.pagination__next{
     margin-left: auto;
 }
 
