@@ -95,12 +95,16 @@
               <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.
               </p>
-              <a class="button slider__button" href="#">Подробнее</a>
+              <a class="button content__button" href="#">Подробнее</a>
               <div class="slider__element-info">
-                <b class="element__specifications">800 м</b>
-                <p class="element__specification-text">Дальность полета</p>
-                <b class="element__specifications">50 м</b>
-                <p class="element__specification-text">Радиус поражения</p>
+                <div class="element__item">
+                  <b class="element__specifications">800 м</b>
+                  <p class="element__specification-text">Дальность полета</p>
+                </div>
+                <div class="element__item">
+                  <b class="element__specifications">50 м</b>
+                  <p class="element__specification-text">Радиус поражения</p>
+                </div>
               </div>
             </div>
           </li>
@@ -113,10 +117,12 @@
                 занятия
                 и соблюдать диету.
               </p>
-              <a class="button slider__button" href="#">Подробнее</a>
+              <a class="button content__button" href="#">Подробнее</a>
               <div class="slider__element-info">
-                <b class="element__specifications">48 часов</b>
-                <p class="element__specification-text">Без подзарядки</p>
+                <div class="element__item">
+                  <b class="element__specifications">48 часов</b>
+                  <p class="element__specification-text">Без подзарядки</p>
+                </div>
               </div>
             </div>
           </li>
@@ -129,14 +135,20 @@
               <p class="slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                 Карл!) метров длиной и весом всего 5 кг.
               </p>
-              <a class="button slider__button" href="#">Подробнее</a>
+              <a class="button content__button" href="#">Подробнее</a>
               <div class="slider__element-info">
-                <b class="element__specifications">8,5 м</b>
-                <p class="element__specification-text">Длина палки</p>
-                <b class="element__specifications">5 кг</b>
-                <p class="element__specification-text">Вес палки</p>
-                <b class="element__specifications">Карбон</b>
-                <p class="element__specification-text">Материал</p>
+                <div class="element__item">
+                  <b class="element__specifications">8,5 м</b>
+                  <p class="element__specification-text">Длина палки</p>
+                </div>
+                <div class="element__item">
+                  <b class="element__specifications">5 кг</b>
+                  <p class="element__specification-text">Вес палки</p>
+                </div>
+                <div class="element__item">
+                  <b class="element__specifications">Карбон</b>
+                  <p class="element__specification-text">Материал</p>
+                </div>
               </div>
             </div>
           </li>
@@ -150,33 +162,40 @@
         <div class="products__container">
           <ul class="products__list list-style-reset">
             <li class="products__item">
-              <a href="#" class="products__item-link">
+              <div class="products__category"></div>
+              <a class="products__item-link" href="#">
                 <h3 class="products__item-title">Виртуальная
                   реальность</h3>
               </a>
             </li>
             <li class="products__item">
+              <div class="products__category"></div>
               <a class="products__item-link" href="catalog.html">
-                <h3 class="products__item-title">Моноподы
+                <h3 class="products__item-title">Моноподы <br>
                   для селфи</h3>
               </a>
+
             </li>
             <li class="products__item">
+              <div class="products__category"></div>
               <a class="products__item-link" href="#">
                 <h3 class="products__item-title">Экшн-камеры</h3>
               </a>
             </li>
             <li class="products__item">
+              <div class="products__category"></div>
               <a class="products__item-link" href="#">
                 <h3 class="products__item-title">Фитнес-браслеты</h3>
               </a>
             </li>
             <li class="products__item">
+              <div class="products__category"></div>
               <a class="products__item-link" href="#">
                 <h3 class="products__item-title">Умные часы</h3>
               </a>
             </li>
             <li class="products__item">
+              <div class="products__category"></div>
               <a class="products__item-link" href="#">
                 <h3 class="products__item-title">Квадрокоптеры</h3>
               </a>
@@ -212,7 +231,7 @@
                 </div>
               </div>
             </li>
-            <li class="services__slides-item">
+            <li class="services__slides-item" hidden>
               <div class="services__category">
                 <div class="services__description">
                   <h2 class="services__title title">Гарантия</h2>
@@ -222,7 +241,7 @@
                 </div>
               </div>
             </li>
-            <li class="services__slides-item">
+            <li class="services__slides-item" hidden>
               <div class="services__category">
                 <div class="services__description">
                   <h2 class="services__title title">Кредит</h2>
@@ -288,7 +307,7 @@
         <div class="distribution__mail">
           <h2 class="distribution__title title">Подпишитесь <br>
             на рассылку</h2>
-          <p class="distribution__description">Еженедельный дайджест с обзорами новинок,
+          <p class="distribution__description">Еженедельный дайджест с обзорами новинок, <br>
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <div class="distribution__mail-subscription">
@@ -311,7 +330,7 @@
         height="36">
       <div class="footer__wrapper">
         <address>
-          <p class="contacts__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
         <nav class="footer__menu">
           <ul class="footer-menu__items list-style-reset">
@@ -326,7 +345,7 @@
             </li>
           </ul>
         </nav>
-        <a class="contacts__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-contacts__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
       <div class="footer__social">
         <ul class="footer__list list-style-reset">
