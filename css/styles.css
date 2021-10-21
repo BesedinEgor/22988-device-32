@@ -97,28 +97,20 @@ body {
     flex-grow: 1;
 }
 
-.header-catalog{
-    margin-bottom: 37px;
-}
-.header__main,
-.header__catalog-main {
-    position: relative;
-    padding: 0 60px;
+.header__main {
+    padding: 17px 60px 147px 60px;
     color: #000;
-    background-color: #ffe17f;
-    margin-top: 40px;
-    padding-bottom: 152px;
+    background: linear-gradient(to top, #ffe17f 88%, #fff 88%, #fff 12%);
 }
-.header__catalog-main{
-    padding-bottom: 38px;
+.resizing {
+    background: linear-gradient(to top, #ffe17f 82%, #fff 82%, #fff 18%);
+    padding-bottom: 34px;
 }
-.header__logo {
-    position: absolute;
-    top: -22px;
+.catalog-main {
+    padding-top: 40px;
 }
 .header__nav {
-    padding-top: 45px;
-    margin-bottom: 23px;
+    margin: 23px 0 37px 0;
 }
 .header__nav,
 .menu__items {
@@ -127,11 +119,9 @@ body {
 }
 .menu__item-link {
     display: block;
-    padding: 15px 0;
 }
-.menu__item:first-child .menu__item-link {
-    padding-right: 67px;
-    margin-right: 247px;
+.menu__item:first-child{
+    margin-right: 315px;
 }
 .menu__item:nth-child(2) {
     margin-right: 30px;
@@ -141,16 +131,13 @@ body {
 }
 .header__login {
     padding-left: 15px;
+    color: rgba(0, 0, 0, 0.3);
 }
 .header__comparison {
     padding-left: 20px;
 }
 .header__basket {
     padding-left: 26px;
-}
-.header__nav{
-    display: flex;
-    align-items: center;
 }
 .header__nav a {
     font-family: inherit;
@@ -159,7 +146,7 @@ body {
     text-decoration: none;
     color: #000;
 }
-.header__log-out{
+.header__log-out {
     padding-left: 0;
     color: rgba(0, 0, 0, 0.3);
 }
@@ -168,12 +155,6 @@ body {
     margin-right: 25px;
     font-size: 16px;
     line-height: 19px;
-}
-.header__login {
-    color: rgba(0, 0, 0, 0.3);
-}
-.form__search {
-    margin-right: 35px;
 }
 .search__field,
 .search__field::placeholder {
@@ -185,6 +166,7 @@ body {
 }
 .header__nav-list:first-child {
     padding-left: 36px;
+    margin-right: 35px;
 }
 .header__nav-list:nth-child(2) {
     margin-right: 185px;
@@ -195,11 +177,11 @@ body {
 .header__nav-list a {
     display: block;
 }
-.header__nav-list a:last-child {
-    padding-right: 0;
-}
 .header__nav-list:last-child {
     margin-left: auto;
+}
+.header__menu {
+    padding-bottom: 20px;
 }
 .header__menu a,
 .footer__menu a {
@@ -246,7 +228,6 @@ body {
 }
 .slider__element-info {
     display: flex;
-    width: 480px;
 }
 .element__item:not(:nth-child(3n)) {
     margin-right: 20px;
@@ -263,7 +244,7 @@ body {
 }
 .products {
     color: #000;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 .products__list {
     display: flex;
@@ -276,8 +257,6 @@ body {
     margin-bottom: 33px;
 }
 .products__item {
-    display: flex;
-    flex-direction: column;
     width: 160px;
 }
 .products h3 {
@@ -293,21 +272,10 @@ body {
 .services {
     position: relative;
     color: #000;
-    margin-bottom: 190px;
+    padding: 82px 0 140px 0;
+    margin-bottom: 90px;
+    background: linear-gradient(to top, #f0f0f0 72%, #fff 72%, #fff 25%);
 }
-/* реализация фона в секции*/
-.services::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 30px;
-    background-color: #f0f0f0;
-    min-width: 100%;
-    height: 288px;
-    z-index: -1;
-}
-/* -------------end------------- */
-
 .services__wrapper {
     display: flex;
 }
@@ -315,7 +283,7 @@ body {
     width: 280px;
     margin-right: 120px;
 }
-.services__item {
+.services__item:not(:last-child) {
     margin-bottom: 44px;
 }
 .services__description {
@@ -336,10 +304,9 @@ body {
 .about__delivery {
     background-color: #f0f0f0;
     color: #000;
-    margin-bottom: 97px;
+    margin-bottom: 100px;
 }
 .about__delivery-description {
-    display: block;
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 20px;
@@ -348,17 +315,14 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: inherit;
-}
-
-.about__delivery-description {
-    display: block;
     padding: 37px 0 43px 0;
 }
-
+.company-info{
+    margin-bottom: 80px;
+}
 .company__wrapper {
     display: flex;
     padding-top: 45px;
-    margin-bottom: 80px;
 }
 .about-us {
     width: 500px;
@@ -455,13 +419,14 @@ body {
 .footer {
     color: #fff;
     background-color: #444444;
-    padding: 60px 0 150px 0;
+    padding: 60px 0 55px 0;
 }
-.footer__logo{
+.footer__logo {
     margin-bottom: 30px;
 }
 .footer__wrapper {
     display: flex;
+    margin-bottom: 53px;
 }
 .footer__adress {
     font-size: 16px;
@@ -477,14 +442,19 @@ body {
     flex-wrap: wrap;
     max-width: 460px;
 }
-.footer-menu__item:not(:nth-child(3n)){
+.footer-menu__item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 .footer-contacts__phone {
     margin-left: auto;
     font-size: 16px;
 }
-
+.footer__social{
+    display: flex;
+}
+.footer__company{
+    margin-left: auto;
+}
 /* -------CATALOG PAGE------- */
 
 .catalog__header {
@@ -497,10 +467,6 @@ body {
     display: flex;
 }
 
-.catalog__right-column {
-    display: flex;
-    flex-direction: column;
-}
 .bredcrumbs {
     display: flex;
 }
@@ -517,7 +483,7 @@ body {
     color: #000;
     background-color: #e5e5e5;
     margin-left: -140px;
-    padding-left: 200px;
+
 }
 .catalog__filter,
 .sort___form label,
@@ -531,10 +497,12 @@ body {
     color: inherit;
     margin: 0;
 }
-.catalog__filter{
-    margin-left: -200px;
+.catalog__filter {
     padding: 25px 0 25px 200px;
     background-color: #ccc;
+}
+.catalog__settings form{
+    padding-left: 200px;
 }
 legend {
     font-weight: 800;
@@ -565,13 +533,13 @@ legend {
 .sort___form {
     color: #000;
     background-color: #ebebeb;
-    padding: 20px 0 20px 72px;
+    padding: 19px 0 20px 72px;
 }
 .sort___form label {
     background-color: inherit;
     margin-right: 40px;
 }
-.select__control{
+.select__control {
     font-family: inherit;
     font-size: 16px;
     line-height: 19px;
@@ -582,7 +550,7 @@ legend {
     line-height: 19px;
 }
 
-.product{
+.product {
     margin-left: 72px;
     margin-bottom: 50px;
 }
@@ -619,13 +587,13 @@ legend {
     text-transform: none;
     letter-spacing: 0;
 }
-.pagination__item:not(:last-child){
+.pagination__item:not(:last-child) {
     margin-right: 30px;
 }
-.product__card-btn{
+.product__card-btn {
     padding: 0 10px;
 }
-.product__again{
+.product__again {
     width: 100%;
     background: none;
     padding: 18px 0;
@@ -638,10 +606,10 @@ legend {
     font-weight: 800;
     letter-spacing: 0.2em;
 }
-.pagination-prev{
+.pagination-prev {
     margin-right: 180px;
 }
-.pagination__link.pagination__next{
+.pagination__link.pagination__next {
     margin-left: auto;
 }
 
