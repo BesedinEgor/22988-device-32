@@ -120,7 +120,7 @@ body {
 .menu__item-link {
     display: block;
 }
-.menu__item:first-child{
+.menu__item:first-child {
     margin-right: 315px;
 }
 .menu__item:nth-child(2) {
@@ -317,7 +317,7 @@ body {
     color: inherit;
     padding: 37px 0 43px 0;
 }
-.company-info{
+.company-info {
     margin-bottom: 80px;
 }
 .company__wrapper {
@@ -449,10 +449,10 @@ body {
     margin-left: auto;
     font-size: 16px;
 }
-.footer__social{
+.footer__social {
     display: flex;
 }
-.footer__company{
+.footer__company {
     margin-left: auto;
 }
 /* -------CATALOG PAGE------- */
@@ -483,7 +483,6 @@ body {
     color: #000;
     background-color: #e5e5e5;
     margin-left: -140px;
-
 }
 .catalog__filter,
 .sort___form label,
@@ -501,7 +500,7 @@ body {
     padding: 25px 0 25px 200px;
     background-color: #ccc;
 }
-.catalog__settings form{
+.catalog__settings form {
     padding-left: 200px;
 }
 legend {
@@ -524,6 +523,10 @@ legend {
     font-size: 16px;
     line-height: 19px;
     text-align: left;
+}
+
+.catalog__right-column{
+    margin-bottom: 77px;
 }
 
 .sort {
@@ -555,14 +558,24 @@ legend {
     margin-bottom: 50px;
 }
 .product-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 44px 40px;
     margin-bottom: 44px;
 }
-.product__card:not(:nth-child(2n)) {
-    margin-right: 40px;
+.product__card-image{
+    margin-bottom: 24px;
+}
+.product__card-description{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 .product__card-title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    max-width: 254px;
     margin: 0;
     padding: 0;
 }
@@ -570,6 +583,7 @@ legend {
     line-height: 21px;
     font-weight: 400;
     text-align: right;
+    margin-left: auto;
 }
 .pagination {
     color: rgba(0, 0, 0, 0.3);
@@ -590,13 +604,16 @@ legend {
 .pagination__item:not(:last-child) {
     margin-right: 30px;
 }
+.pagination__item:last-child{
+    margin-left: auto;
+}
 .product__card-btn {
     padding: 0 10px;
 }
 .product__again {
     width: 100%;
     background: none;
-    padding: 18px 0;
+    padding: 15px 0;
     border: 3px solid #ebebeb;
 }
 .pagination-prev,
@@ -608,9 +625,6 @@ legend {
 }
 .pagination-prev {
     margin-right: 180px;
-}
-.pagination__link.pagination__next {
-    margin-left: auto;
 }
 
 .footer-catalog {
