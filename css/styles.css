@@ -145,7 +145,7 @@ body {
     transform: translateY(-50%);
 }
 /* "активность" поля ввода email */
-.form__active {
+/* .form__active {
     border: 2px solid #000;
     border-radius: 20px;
 }
@@ -177,7 +177,7 @@ body {
 .search__button:active{
     background-color: #000;
     color: rgba(255, 255, 255, 0.3);
-}
+} */
 /* ----------------------------- */
 .search__field,
 .search__field::placeholder {
@@ -381,9 +381,9 @@ body {
 .menu__item:not(:first-child) {
     position: relative;
 }
-.menu__item-link:hover {
-    padding-bottom: 8px;
-    border-bottom: 2px solid black;
+.menu__item:not(:first-child):hover .menu__item-link {
+    text-decoration: 2px underline #000;
+    text-underline-offset: 8px;
 }
 .menu__item:first-child:focus .menu__item-link::after {
     content: "";
