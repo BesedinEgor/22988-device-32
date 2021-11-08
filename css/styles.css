@@ -642,7 +642,7 @@ body {
     background-color: #af4fff;
 }
 /* активность кнопки */
-.services__title-item--active {
+.services__title-item.services__title-item--active {
     padding: 8px 257px 10px 20px;
     background-color: #000;
     color: #ffe17f;
@@ -751,7 +751,7 @@ body {
 
 .about-us__list {
     padding: 0;
-    margin: 72px 0 53px 35px;
+    margin: 72px 0 52px 35px;
 }
 .about-us__item {
     position: relative;
@@ -777,9 +777,8 @@ body {
 .about-us__button,
 .contacts__button {
     position: relative;
-    display: inline-block;
-    min-width: 260px;
-    padding: 15px 0;
+    width: 260px;
+    padding: 25px 0;
 }
 .about-us__button::after,
 .contacts__button::before {
@@ -788,14 +787,17 @@ body {
     width: 260px;
     height: 8px;
     background-color: #ffe17f;
-    top: 22px;
-    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: -1;
 }
 .about-us__button:hover,
 .contacts__button:hover {
-    background-color: #ffc700;
-    padding: 15px 0;
+    background-color: #ffe17f;
+}
+.about-us__button:focus::after,
+.contacts__button:focus::before {
+    background-color: #af4fff;
 }
 .about-us__button:active,
 .contacts__button:active {
@@ -818,7 +820,7 @@ body {
     margin: 0;
 }
 .contacts__schedule {
-    margin-bottom: 53px;
+    margin-bottom: 52px;
 }
 
 .distribution {
