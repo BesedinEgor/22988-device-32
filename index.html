@@ -542,7 +542,9 @@
               </label>
             </div>
             <div class="field-group appointment-form-number">
-              <label class="auth__number" for="auth-number">
+              <button class="number__btn number__minus" type="button" id="select-number"></button>
+              <button class="number__btn number__plus" type="button" id="select-number"></button>
+              <label class="auth__number" for="select-number">
                 Количество:
                 <button class="auth__information popup-info" type="button" id="auth-number">
                   <div class="popup-info__container">
@@ -551,9 +553,7 @@
                       к провозу багажа.</p>
                   </div>
                 </button>
-                <button class="number__btn number__minus" type="button" id="auth-number"></button>
                 <input class="auth__input error" type="number" id="auth-number" name="auth-number" value="1" required>
-                <button class="number__btn number__plus" type="button" id="auth-number"></button>
               </label>
             </div>
           </div>
