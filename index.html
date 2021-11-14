@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Девайс</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Rubik:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
@@ -24,7 +25,7 @@
               <label class="form-search__label" for="search">
                 <input class="search__field" type="search" name="search" id="search" placeholder="Поиск по сайту"
                   tabindex="0">
-                  <!-- ----кнопка активности поля поиска---- -->
+                <!-- ----кнопка активности поля поиска---- -->
                 <!-- <button class="search__button" type="submit">Найти</button> -->
               </label>
             </form>
@@ -35,15 +36,76 @@
           <li class="header__nav-list">
             <a class="header__comparison" href="#">Сравнить</a>
           </li>
-          <li class="header__nav-list">
-            <a class="header__basket" href="#">Корзина</a>
+          <li class="header__nav-list popup__basket">
+            <a class="header__basket " href="#">Корзина</a>
+            <div class="popup__cart">
+              <ul class="popup__items list-style-reset">
+                <li class="popup__item">
+                  <a class="popup__item-link" href="#">
+                    <img class="popup__product" src="img/cart/product-small1.jpg" alt="любительская селфи-палка"
+                      width="41" height="43">
+                    <p class="popup__description">Любительская <br> селфи-палка</p>
+                  </a>
+                  <button class="removing-button" type="button">
+                    <span class="visually-hidden">Удаление товара из корзины</span>
+                  </button>
+                </li>
+                <li class="popup__item">
+                  <a class="popup__item-link" href="#">
+                    <img class="popup__product" src="img/cart/product-small2.jpg" alt="любительская селфи-палка"
+                      width="41" height="43">
+                    <p class="popup__description">Профессиональная селфи-палка</p>
+                  </a>
+                  <button class="removing-button" type="button">
+                    <span class="visually-hidden">Удаление товара из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="popup-total__items list-style-reset">
+                <li class="popup-total__item">
+                  <p class="popup-total__text">Товаров:</p>
+                  <span>2</span>
+                </li>
+                <li class="popup-total__item">
+                  <p class="popup-total__text">Сумма:</p>
+                  <span>2000 ₽</span>
+                </li>
+              </ul>
+              <a class="popup__cart-button" href="#">Открыть корзину</a>
+            </div>
           </li>
         </ul>
         <nav class="header__menu">
           <ul class="menu__items list-style-reset">
-            <li class="menu__item">
-              <a class="menu__item-link" href="catalog.html">Каталог товаров</a>
+            <li class="menu__item sub__menu">
+              <a class="menu__item-link" href="#">Каталог товаров</a>
               <div class="menu__item-element"></div>
+              <div class="sub-menu__inner">
+                <ul class="sub-menu__items">
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__item-link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__item-link" href="catalog.html">Моноподы для cелфи</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__item-link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="sub-menu__items">
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__item-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__item-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="sub-menu__items">
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__item-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu__item">
               <a class="menu__item-link" href="#">Доставка</a>
@@ -64,98 +126,102 @@
     <section class="slider">
       <div class="container">
         <h2 class="visually-hidden">Галерея товар интернет-магазина гаджетов DEVICE</h2>
-        <div class="slider__element">
-          <button class="slider__button slider__prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider__button slider__next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-          <ol class="slider__pagination list-style-reset">
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button slider__pagination-active">
-                <span class="visually-hidden">1 слайд</span>
+        <div class="slider__inner">
+          <div class="slider__element">
+            <div class="slider__element-wrapper">
+              <button class="slider__button slider__prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
               </button>
-            </li>
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button">
-                <span class="visually-hidden">2 слайд</span>
+              <button class="slider__button slider__next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
               </button>
+            </div>
+            <ol class="slider__pagination list-style-reset">
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button slider__pagination-active">
+                  <span class="visually-hidden">1 слайд</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button">
+                  <span class="visually-hidden">2 слайд</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button">
+                  <span class="visually-hidden">3 слайд</span>
+                </button>
+              </li>
+            </ol>
+          </div>
+          <ul class="slider__items list-style-reset">
+            <li class="slider__item">
+              <img class="slider__images" src="img/slider/slider-1.png" alt="Квадрокоптер" width="560" height="560">
+              <div class="slider__content">
+                <h3 class="slider__title title">Порхает как бабочка,
+                  жалит как пчела!</h3>
+                <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                  замаскированным под стандартную камеру.
+                </p>
+                <a class="button content__button" href="#">Подробнее</a>
+                <div class="slider__element-info">
+                  <div class="element__item">
+                    <b class="element__specifications">800 м</b>
+                    <p class="element__specification-text">Дальность полета</p>
+                  </div>
+                  <div class="element__item">
+                    <b class="element__specifications">50 м</b>
+                    <p class="element__specification-text">Радиус поражения</p>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button">
-                <span class="visually-hidden">3 слайд</span>
-              </button>
-            </li>
-          </ol>
+            <!-- <li class="slider__item">
+              <img class="slider__images" src="img/slider/slider-2.png" alt="Фитнесс-браслет" width="560" height="560">
+              <div class="slider__content">
+                <h3 class="slider__title title">Худеем
+                  правильно!</h3>
+                <p class="slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                  занятия
+                  и соблюдать диету.
+                </p>
+                <a class="button content__button" href="#">Подробнее</a>
+                <div class="slider__element-info">
+                  <div class="element__item">
+                    <b class="element__specifications">48 часов</b>
+                    <p class="element__specification-text">Без подзарядки</p>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+            <!-- <li class="slider__item">
+              <img class="slider__images" src="img/slider/slider-3.png" alt="Селфи-палки(штатив)" width="560"
+                height="560">
+              <div class="slider__content">
+                <h3 class="slider__title title">Делай селфи,
+                  как Бен Стиллер! </h3>
+                <p class="slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                  Карл!) метров длиной и весом всего 5 кг.
+                </p>
+                <a class="button content__button" href="#">Подробнее</a>
+                <div class="slider__element-info">
+                  <div class="element__item">
+                    <b class="element__specifications">8,5 м</b>
+                    <p class="element__specification-text">Длина палки</p>
+                  </div>
+                  <div class="element__item">
+                    <b class="element__specifications">5 кг</b>
+                    <p class="element__specification-text">Вес палки</p>
+                  </div>
+                  <div class="element__item">
+                    <b class="element__specifications">Карбон</b>
+                    <p class="element__specification-text">Материал</p>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+          </ul>
         </div>
-        <ul class="slider__items list-style-reset">
-          <li class="slider__item">
-            <img class="slider__images" src="img/slider/slider-1.png" alt="Квадрокоптер" width="560" height="560">
-            <div class="slider__content">
-              <h3 class="slider__title title">Порхает как бабочка,
-                жалит как пчела!</h3>
-              <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                замаскированным под стандартную камеру.
-              </p>
-              <a class="button content__button" href="#">Подробнее</a>
-              <div class="slider__element-info">
-                <div class="element__item">
-                  <b class="element__specifications">800 м</b>
-                  <p class="element__specification-text">Дальность полета</p>
-                </div>
-                <div class="element__item">
-                  <b class="element__specifications">50 м</b>
-                  <p class="element__specification-text">Радиус поражения</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider__item">
-            <img class="slider__images" src="img/slider/slider-2.png" alt="Фитнесс-браслет" width="560" height="560">
-            <div class="slider__content">
-              <h3 class="slider__title title">Худеем
-                правильно!</h3>
-              <p class="slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
-                занятия
-                и соблюдать диету.
-              </p>
-              <a class="button content__button" href="#">Подробнее</a>
-              <div class="slider__element-info">
-                <div class="element__item">
-                  <b class="element__specifications">48 часов</b>
-                  <p class="element__specification-text">Без подзарядки</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider__item">
-            <img class="slider__images" src="img/slider/slider-3.png" alt="Селфи-палки(штатив)" width="560"
-              height="560">
-            <div class="slider__content">
-              <h3 class="slider__title title">Делай селфи,
-                как Бен Стиллер! </h3>
-              <p class="slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
-                Карл!) метров длиной и весом всего 5 кг.
-              </p>
-              <a class="button content__button" href="#">Подробнее</a>
-              <div class="slider__element-info">
-                <div class="element__item">
-                  <b class="element__specifications">8,5 м</b>
-                  <p class="element__specification-text">Длина палки</p>
-                </div>
-                <div class="element__item">
-                  <b class="element__specifications">5 кг</b>
-                  <p class="element__specification-text">Вес палки</p>
-                </div>
-                <div class="element__item">
-                  <b class="element__specifications">Карбон</b>
-                  <p class="element__specification-text">Материал</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
 
@@ -441,6 +507,61 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal-container">
+    <div class="modal modal__auth">
+      <button class="modal__close-btn">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal__content">
+        <h2 class="modal__title">Доставка под заказ</h2>
+        <form class="auth-form auth-form__active" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="modal-form__inner">
+            <div class="field-group appointment-form-user">
+              <label class="auth__label" for="auth-user">
+                Ваше имя:
+                <input class="auth__input" type="text" id="auth-user" name="auth-user" placeholder="Имя Фамилия">
+              </label>
+              <div class="auth__caption">Пожалуйста, представьтесь</div>
+            </div>
+            <div class="field-group appointment-form-email">
+              <label class="auth__email" for="auth-email">
+                Ваш e-mail:
+                <input class="auth__input input__active" type="email" id="auth-email" name="auth-email"
+                  placeholder="krasotka92@mail.ru" required>
+              </label>
+              <div class="auth__caption error">Забавный у вас адрес</div>
+            </div>
+          </div>
+          <div class="modal-form__inner">
+            <div class="field-group appointment-form-description">
+              <label class="auth__description" for="auth-description">
+                Что нужно привезти:
+                <input class="auth__input" type="text" id="auth-description" name="auth-description"
+                  placeholder="В свободной форме">
+              </label>
+            </div>
+            <div class="field-group appointment-form-number">
+              <label class="auth__number" for="auth-number">
+                Количество:
+                <button class="auth__information popup-info" type="button">
+                  <div class="popup-info__container">
+                    <p class="popup-info__text">Постараемся найти, сколько нужно. Привезём сколько получится по
+                      требованиям
+                      к провозу багажа.</p>
+                  </div>
+                </button>
+                <button class="number__btn number__minus" type="button"></button>
+                <input class="auth__input error" type="number" id="auth-number" name="auth-number" value="1" required>
+                <button class="number__btn number__plus" type="button"></button>
+              </label>
+            </div>
+          </div>
+          <button class="button modal__button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
