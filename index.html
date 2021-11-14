@@ -428,11 +428,11 @@
         </div>
         <div class="distribution__mail-subscription">
           <form class="distribution__form" method="POST" action="https://echo.htmlacademy.ru/">
-            <label class="distribution__subscription" for="distribution-email">
-              <input class="distribution__input distribution__input-active" type="email" id="distribution-email"
-                name="distribution-email" placeholder="Ваш e-mail" required>
-              <button class="distribution__btn" type="submit" id="distribution-email">Подписаться</button>
+            <label class="distribution__subscription">
+              <input class="distribution__input distribution__input-active" type="email" name="distribution-email"
+                placeholder="Ваш e-mail" required>
             </label>
+            <button class="distribution__btn" type="submit">Подписаться</button>
           </form>
           <span class="distribution__subscription-free">Это бесплатно</span>
         </div>
@@ -542,19 +542,19 @@
               </label>
             </div>
             <div class="field-group appointment-form-number">
-              <button class="number__btn number__minus" type="button" id="select-number"></button>
-              <button class="number__btn number__plus" type="button" id="select-number"></button>
-              <label class="auth__number" for="select-number">
+              <label class="auth__number">
                 Количество:
-                <button class="auth__information popup-info" type="button" id="auth-number">
-                  <div class="popup-info__container">
-                    <p class="popup-info__text">Постараемся найти, сколько нужно. Привезём сколько получится по
-                      требованиям
-                      к провозу багажа.</p>
-                  </div>
-                </button>
-                <input class="auth__input error" type="number" id="auth-number" name="auth-number" value="1" required>
+                <input class="auth__input error" type="number" name="auth-number" value="1" required>
               </label>
+              <button class="number__btn number__minus" type="button"></button>
+              <button class="number__btn number__plus" type="button"></button>
+              <div class="auth__information popup-info" type="button">
+                <div class="popup-info__container">
+                  <p class="popup-info__text">Постараемся найти, сколько нужно. Привезём сколько получится по
+                    требованиям
+                    к провозу багажа.</p>
+                </div>
+              </div>
             </div>
           </div>
           <button class="button modal__button" type="submit">Отправить</button>

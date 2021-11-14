@@ -2011,7 +2011,7 @@ legend {
     height: 100%;
     background-color: rgba(240, 240, 240, 0.9);
     z-index: 10;
-    /* display: none; */
+    display: none;
 }
 .modal {
     position: relative;
@@ -2147,9 +2147,6 @@ legend {
 .auth__description .auth__input {
     width: 560px;
 }
-.appointment-form-number{
-    position: relative;
-}
 .auth__number {
     position: relative;
 }
@@ -2158,6 +2155,7 @@ legend {
     padding-left: 75px;
 }
 .auth__input[type="number"] {
+    position: relative;
     appearance: textfield;
 }
 .auth__input[type="number"]::-webkit-outer-spin-button,
@@ -2168,7 +2166,7 @@ legend {
     position: absolute;
     width: 32px;
     height: 32px;
-    bottom: 20px;
+    top: 46px;
     border: 2px solid transparent;
     border-radius: 50%;
     background: none;
@@ -2192,12 +2190,15 @@ legend {
 .number__minus {
     position: absolute;
     background-image: url(../img/modal-minus.svg);
-    left: 10px;
+    left: 11px;
 }
 .number__plus {
     position: absolute;
     background-image: url(../img/modal-plus.svg);
-    right: 10px;
+    right: 11px;
+}
+.appointment-form-number{
+    position: relative;
 }
 .appointment-form-number .auth__input[type="number"]:invalid {
     border: 3px solid #ff3d3d;
@@ -2218,17 +2219,12 @@ legend {
     height: 26px;
     top: -2px;
     right: 14px;
-    border: none;
     border-radius: 50%;
     background-color: #ffe17f;
     background-image: url(../img/info.svg);
     background-repeat: no-repeat;
     background-position: center;
     outline: none;
-}
-.popup-info:hover .popup-info__container,
-.popup-info:focus-within .popup-info__container {
-    visibility: visible;
 }
 .popup-info__container {
     position: absolute;
@@ -2250,6 +2246,10 @@ legend {
     right: 42px;
     background-color: #000;
     transform: rotate(45deg);
+}
+.auth__information.popup-info:hover .popup-info__container,
+.popup-info:focus-within .popup-info__container {
+    visibility: visible;
 }
 .popup-info__text {
     font-family: inherit;
