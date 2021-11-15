@@ -160,6 +160,9 @@ body {
     border: 2px solid #000;
     border-radius: 20px;
 }
+.form-search__label .search__field{
+    color: #000;
+}
 .form-search__label button {
     font-family: inherit;
     font-size: 16px;
@@ -204,7 +207,7 @@ body {
     min-width: 516px;
     border: none;
     background: none;
-    padding: 10px 15px 10px 47px;
+    padding: 10px 170px 10px 47px;
     border: 2px solid transparent;
     border-radius: 20px;
 }
