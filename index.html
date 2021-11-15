@@ -26,7 +26,7 @@
                 <input class="search__field" type="search" name="search" id="search" placeholder="Поиск по сайту"
                   tabindex="0">
                 <!-- кнопка активности поля поиска -->
-                <!-- <button class="search__button" type="submit">Найти</button> -->
+                <button class="search__button search__button-active" type="submit">Найти</button>
               </label>
             </form>
           </li>
@@ -78,30 +78,30 @@
         <nav class="header__menu">
           <ul class="menu__items list-style-reset">
             <li class="menu__item sub__menu">
-              <a class="menu__item-link" href="#">Каталог товаров</a>
+              <a class="menu__item-link" href="catalog.html">Каталог товаров</a>
               <div class="menu__item-element"></div>
               <div class="sub-menu__inner">
-                <ul class="sub-menu__items">
-                  <li class="sub-menu__item">
+                <ul class="sub-menu__items list-style-reset">
+                  <li class="sub-menu__item list-style-reset">
                     <a class="sub-menu__item-link" href="#">Виртуальная реальность</a>
                   </li>
-                  <li class="sub-menu__item">
+                  <li class="sub-menu__item list-style-reset">
                     <a class="sub-menu__item-link" href="catalog.html">Моноподы для cелфи</a>
                   </li>
-                  <li class="sub-menu__item">
+                  <li class="sub-menu__item list-style-reset">
                     <a class="sub-menu__item-link" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
-                <ul class="sub-menu__items">
-                  <li class="sub-menu__item">
+                <ul class="sub-menu__items list-style-reset">
+                  <li class="sub-menu__item list-style-reset">
                     <a class="sub-menu__item-link" href="#">Фитнес-браслеты</a>
                   </li>
-                  <li class="sub-menu__item">
+                  <li class="sub-menu__item list-style-reset">
                     <a class="sub-menu__item-link" href="#">Умные часы</a>
                   </li>
                 </ul>
-                <ul class="sub-menu__items">
-                  <li class="sub-menu__item">
+                <ul class="sub-menu__items list-style-reset">
+                  <li class="sub-menu__item list-style-reset">
                     <a class="sub-menu__item-link" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
@@ -176,7 +176,7 @@
                 </div>
               </div>
             </li>
-            <!-- <li class="slider__item">
+            <li class="slider__item visually-hidden">
               <img class="slider__images" src="img/slider/slider-2.png" alt="Фитнесс-браслет" width="560" height="560">
               <div class="slider__content">
                 <h3 class="slider__title title">Худеем
@@ -193,8 +193,8 @@
                   </div>
                 </div>
               </div>
-            </li> -->
-            <!-- <li class="slider__item">
+            </li>
+            <li class="slider__item visually-hidden">
               <img class="slider__images" src="img/slider/slider-3.png" alt="Селфи-палки(штатив)" width="560"
                 height="560">
               <div class="slider__content">
@@ -219,7 +219,7 @@
                   </div>
                 </div>
               </div>
-            </li> -->
+            </li>
           </ul>
         </div>
       </div>
@@ -510,7 +510,7 @@
 
   <div class="modal-container">
     <div class="modal modal__auth">
-      <button class="modal__close-btn">
+      <button class="modal__close-btn" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal__content">
@@ -520,7 +520,8 @@
             <div class="field-group appointment-form-user">
               <label class="auth__label" for="auth-user">
                 Ваше имя:
-                <input class="auth__input" type="text" id="auth-user" name="auth-user" placeholder="Имя Фамилия">
+                <input class="auth__input" type="text" id="auth-user" name="auth-user" placeholder="Имя Фамилия"
+                  required>
               </label>
               <div class="auth__caption">Пожалуйста, представьтесь</div>
             </div>
@@ -538,7 +539,7 @@
               <label class="auth__description" for="auth-description">
                 Что нужно привезти:
                 <input class="auth__input" type="text" id="auth-description" name="auth-description"
-                  placeholder="В свободной форме">
+                  placeholder="В свободной форме" required>
               </label>
             </div>
             <div class="field-group appointment-form-number">

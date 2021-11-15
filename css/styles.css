@@ -148,7 +148,7 @@ body {
 .form-search__label::before {
     content: "";
     position: absolute;
-    background-image: url(../img/search.svg);
+    background-image: url("../img/search.svg");
     width: 16px;
     height: 16px;
     left: 15px;
@@ -156,7 +156,7 @@ body {
     transform: translateY(-50%);
 }
 /* "активность" поля ввода email */
-/* .form__active {
+.form__active {
     border: 2px solid #000;
     border-radius: 20px;
 }
@@ -164,6 +164,9 @@ body {
     font-family: inherit;
     font-size: 16px;
     line-height: 19px;
+}
+.search__button.search__button-active{
+    display: block;
 }
 .search__button {
     position: absolute;
@@ -188,8 +191,8 @@ body {
 .search__button:active{
     background-color: #000;
     color: rgba(255, 255, 255, 0.3);
-} */
-/* ----------------------------- */
+}
+/* --------------END--------------- */
 .search__field,
 .search__field::placeholder {
     font-family: inherit;
@@ -203,13 +206,13 @@ body {
     background: none;
     padding: 10px 15px 10px 47px;
     border: 2px solid transparent;
+    border-radius: 20px;
 }
 .search__field:hover::placeholder {
     color: rgba(0, 0, 0, 0.6);
 }
 .search__field:focus {
-    border: 2px solid #af4fff;
-    border-radius: 25px;
+    border-color:#af4fff;
 }
 .search__field,
 .search__button {
@@ -245,7 +248,7 @@ body {
     width: 13px;
     height: 12px;
     left: 20px;
-    background-image: url(../img/login.svg);
+    background-image: url("../img/login.svg");
 }
 .header__login.header__logout {
     color: rgba(0, 0, 0, 0.3);
@@ -272,7 +275,7 @@ body {
     width: 10px;
     height: 12px;
     left: 25px;
-    background-image: url(../img/compare.svg);
+    background-image: url("../img/compare.svg");
 }
 .header__basket {
     padding-left: 41px;
@@ -280,7 +283,7 @@ body {
 .header__basket:before {
     width: 31px;
     height: 21px;
-    background-image: url(../img/cart.svg);
+    background-image: url("../img/cart.svg");
 }
 .header__basket:focus::after {
     content: "";
@@ -627,19 +630,14 @@ body {
 .sub-menu__inner {
     position: absolute;
     display: flex;
-    top: 51px;
+    bottom: 0;
+    transform: translateY(100%);
     left: -35px;
     background-color: #ffe17f;
     z-index: 2;
     width: 1160px;
     padding: 28px 45px 53px;
     visibility: hidden;
-}
-.sub-menu__items,
-.sub-menu__item {
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 .sub-menu__items {
     margin-right: 12px;
@@ -707,7 +705,7 @@ body {
     border: 2px solid transparent;
     border-radius: 6px;
     background: none;
-    background-image: url(../img/slider/slider-arrow.svg);
+    background-image: url("../img/slider/slider-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -929,23 +927,23 @@ body {
     right: 0;
 }
 .services__slide1 .services__category::after {
-    background-image: url(../img/delivery.svg);
+    background-image: url("../img/delivery.svg");
     width: 136px;
     height: 164px;
 }
 
 /* -------- Слайды слайдера-------- */
-/* .services__slide2 .services__category::after{
-    background-image: url(../img/warranty.svg);
+.services__slide2 .services__category::after{
+    background-image: url("../img/warranty.svg");
     width: 171px;
     height: 195px;
 }
 .services__slide3 .services__category::after{
-    background-image: url(../img/credit.svg);
+    background-image: url("../img/credit.svg");
     width: 156px;
     height: 188px;
-} */
-
+}
+/* ------------------END------------------- */
 .services__items {
     position: relative;
     width: 280px;
@@ -1215,18 +1213,21 @@ body {
     border: none;
     padding: 16px 2px 15px 2px;
 }
+
 /* состояние "активность" поля ввода email */
-/* .distribution__input-active{
+.distribution__input-active{
     border-color: #000; 
 }
 .distribution__input-active::placeholder{
     color: #444444;
-} */
+}
+/* -------------------END---------------------- */
 
 /* состояние "ошибка ввода" поля ввода email */
-/* .distribution__input:invalid::placeholder {
+.distribution__input:invalid {
     border-color: #ff3d3d;
-} */
+}
+/* -------------------END---------------------- */
 
 .distribution__btn {
     font-family: "raleway", sans-serif;
@@ -1256,7 +1257,7 @@ body {
 .distribution__subscription-free {
     margin-left: auto;
     padding-left: 35px;
-    background-image: url(../img/green-check.svg);
+    background-image: url("../img/green-check.svg");
     background-repeat: no-repeat;
     background-position: left 8px;
     align-self: center;
@@ -1290,6 +1291,7 @@ body {
 }
 .footer-menu__item {
     position: relative;
+    margin-bottom: 5px;
 }
 .footer-menu__item:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -1447,7 +1449,7 @@ body {
     height: 7px;
     top: 12px;
     left: 97px;
-    background-image: url(../img/bredcrumbs-arrow.svg);
+    background-image: url("../img/bredcrumbs-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -1548,12 +1550,13 @@ legend {
     border-color: #000;
     background-color: #000;
 }
-.toggle-min {
-    top: -8px;
+.toggle-min,
+.toggle-max {
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
 }
 .toggle-max {
-    top: -8px;
     left: 111px;
 }
 .range-toggle,
@@ -1645,7 +1648,7 @@ legend {
     height: 10px;
     top: 5px;
     left: 7px;
-    background-image: url(../img/Check-marker.svg);
+    background-image: url("../img/Check-marker.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: none;
@@ -1654,7 +1657,7 @@ legend {
     display: block;
 }
 .control__input[type="checkbox"]:not(:checked) + .control__label::before,
-.control__input[type="radio"]:not(:checked):hover + .control::before {
+.control__input[type="radio"]:hover + .control::before {
     opacity: 0.2;
 }
 .control__input[type="checkbox"]:checked:hover + .control__label,
@@ -1664,30 +1667,24 @@ legend {
 .control__input[type="radio"]:not(:checked):hover .control::before {
     opacity: 0.2;
 }
-.control__input[type="checkbox"]:checked:focus + .control__label::before,
-.control__input[type="checkbox"]:checked:focus + .control__label .control__span,
-.control__input[type="checkbox"]:not(:checked):focus + .control__label::before,
-.control__input[type="checkbox"]:not(:checked):focus + .control__label .control__span,
-.control__input[type="radio"]:checked:focus + .control::before,
-.control__input[type="radio"]:checked:focus + .control .control__span,
-.control__input[type="radio"]:not(:checked):focus + .control,
-.control__input[type="radio"]:not(:checked):focus + .control .control__span {
+.control__input[type="checkbox"]:focus + .control__label::before,
+.control__input[type="checkbox"]:focus + .control__label .control__span,
+.control__input[type="radio"]:focus + .control::before,
+.control__input[type="radio"]:focus + .control .control__span,
+.control__input[type="radio"]:focus + .control {
     border-color: #af4fff;
     color: #af4fff;
     opacity: 1;
 }
 .control__input[type="checkbox"]:checked:focus + .control__label::after {
-    background-image: url(../img/check-focus.svg);
+    background-image: url("../img/check-focus.svg");
     background-repeat: no-repeat;
 }
-.control__input[type="radio"]:checked:focus + .control::after {
+.control__input[type="radio"]:focus + .control::after {
     background-color: #af4fff;
 }
-
-.control__input[type="checkbox"]:checked:active + .control__label,
-.control__input[type="checkbox"]:not(:checked):active + .control__label,
-.control__input[type="radio"]:checked:active + .control,
-.control__input[type="radio"]:not(:checked):active + .control {
+.control__input[type="checkbox"]:active + .control__label,
+.control__input[type="radio"]:active + .control {
     opacity: 0.2;
 }
 .control__input {
@@ -1709,7 +1706,7 @@ legend {
     border-radius: 50%;
     width: 8px;
     height: 8px;
-    left: 9px;
+    left: 8px;
     top: 6px;
     background-color: #000;
     display: none;
@@ -1779,7 +1776,7 @@ legend {
     padding: 5px 38px 5px 13px;
     border: 5px solid transparent;
     appearance: none;
-    background-image: url(../img/dropdown.svg);
+    background-image: url("../img/dropdown.svg");
     background-repeat: no-repeat;
     background-position: 190px center;
     cursor: pointer;
@@ -1820,10 +1817,12 @@ legend {
 .select__control-up {
     transform: rotate(180deg);
 }
+
 /* ------"Активность" элемента сортировки------ */
 .control-active svg {
     fill: #000;
 }
+/* -----------------------END---------------------- */
 
 .product {
     margin-left: 72px;
@@ -1990,7 +1989,8 @@ legend {
     border-color: #af4fff;
 }
 .pagination__link:active {
-    color: #44444410;
+    color: #444444;
+    opacity: 0.1;
 }
 .pagination-prev:active,
 .pagination__next:active {
@@ -2011,7 +2011,7 @@ legend {
     height: 100%;
     background-color: rgba(240, 240, 240, 0.9);
     z-index: 10;
-    display: none;
+    /* display: none; */
 }
 .modal {
     position: relative;
@@ -2033,7 +2033,7 @@ legend {
     border: 5px solid transparent;
     border-radius: 50%;
     background: none;
-    background-image: url(../img/modal-close.svg);
+    background-image: url("../img/modal-close.svg");
     background-repeat: no-repeat;
     background-position: center;
     outline: none;
@@ -2077,48 +2077,38 @@ legend {
     letter-spacing: -0.02em;
     color: #000;
 }
-.auth-form input:hover {
-    background-color: #ebebeb;
-}
-.auth-form input:focus {
-    outline: 5px solid #af4fff;
-}
-/* ----"Активность" полей форм---- */
-/* .auth-form input:active {
-    border-color: #000;
-} */
 .auth__label,
 .auth__email {
     position: relative;
 }
 .auth__label::after,
-.auth__email:after {
+.auth__email::after {
     content: "";
     position: absolute;
     width: 13px;
     height: 12px;
     top: 56px;
     right: 21px;
-    background-image: url(../img/login.svg);
+    background-image: url("../img/login.svg");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.3;
 }
-.auth__email:after {
+.auth__email::after {
     width: 15px;
     height: 12px;
     top: 56px;
     right: 21px;
-    background-image: url(../img/mail.svg);
+    background-image: url("../img/mail.svg");
     opacity: 1;
 }
-/* ----Ошибка ввода поля email---- */
-/* .appointment-form-email .auth__input[type="email"]:invalid{
-    border: 3px solid #ff3d3d;
-}
+
+/* ----Ошибка текста под полем ввода email---- */
 .appointment-form-email .error{
     color: #ff3d3d;
-} */
+}
+/* -------------------END---------------------- */
+
 .auth__caption {
     font-family: inherit;
     font-weight: 400;
@@ -2139,11 +2129,22 @@ legend {
     margin-top: 13px;
     margin-bottom: 5px;
 }
-/* -----"Активность" поля ввода email----- */
-/* .auth-form__active input {
+.auth-form input:hover {
+    background-color: #ebebeb;
+}
+.auth-form input:focus {
+    border-color: #af4fff;
+}
+
+/* -----"Активность" полей ввода (модальное окно)----- */
+.auth-form__active input {
     border-color: #000;
-} */
-/* ------------------------------------------- */
+}
+/* ------------------END---------------------- */
+
+.auth-form .auth__input:invalid {
+    border: 3px solid #ff3d3d;
+}
 .auth__description .auth__input {
     width: 560px;
 }
@@ -2189,19 +2190,16 @@ legend {
 }
 .number__minus {
     position: absolute;
-    background-image: url(../img/modal-minus.svg);
+    background-image: url("../img/modal-minus.svg");
     left: 11px;
 }
 .number__plus {
     position: absolute;
-    background-image: url(../img/modal-plus.svg);
+    background-image: url("../img/modal-plus.svg");
     right: 11px;
 }
-.appointment-form-number{
+.appointment-form-number {
     position: relative;
-}
-.appointment-form-number .auth__input[type="number"]:invalid {
-    border: 3px solid #ff3d3d;
 }
 .auth-form input::placeholder {
     font-family: inherit;
@@ -2221,7 +2219,7 @@ legend {
     right: 14px;
     border-radius: 50%;
     background-color: #ffe17f;
-    background-image: url(../img/info.svg);
+    background-image: url("../img/info.svg");
     background-repeat: no-repeat;
     background-position: center;
     outline: none;
