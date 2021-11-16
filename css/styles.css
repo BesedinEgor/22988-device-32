@@ -130,9 +130,12 @@ body {
     align-items: baseline;
     flex-wrap: wrap;
 }
-.header__nav-list a,
+.header__user,
+.header__login,
+.header__comparison,
+.header__basket,
 .menu__item,
-.menu__item a,
+.footer-menu__item-link,
 .products__item-link {
     outline: none;
 }
@@ -175,9 +178,9 @@ body {
 .search__button {
     position: absolute;
     right: 0;
-    top: -11px;
-    bottom: -14px;
-    right: 2px;
+    top: -2px;
+    bottom: -2px;
+    right: -2px;
     border: 2px solid #000;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -227,8 +230,16 @@ body {
     outline: none;
     cursor: pointer;
 }
-.header__nav-list a {
+.header__user,
+.header__login,
+.header__comparison,
+.header__basket {
     position: relative;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #000;
 }
 .header__login::before,
 .header__user::before,
@@ -312,13 +323,6 @@ body {
 .header__login:active,
 .header__basket:active {
     opacity: 0.3;
-}
-.header__nav a {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
-    color: #000;
 }
 .header__nav-list,
 .menu__item {
@@ -523,8 +527,9 @@ body {
 .header__menu {
     padding-bottom: 20px;
 }
-.header__menu a,
-.footer__menu a {
+.menu__item-link,
+.sub-menu__item-link,
+.footer-menu__item-link {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     text-align: center;
@@ -1510,12 +1515,12 @@ body {
     padding-left: 198px;
     padding-right: 68px;
 }
-fieldset {
+.catalog__filter-group {
     border: none;
     margin: 0;
     padding: 0;
 }
-legend {
+.catalog__filter-title {
     font-weight: 800;
     line-height: 20px;
     letter-spacing: -0.02em;
@@ -1810,14 +1815,17 @@ legend {
     margin-left: auto;
     margin-right: 130px;
 }
-.sort__control a {
+.sort__control .select__control-up,
+.sort__control .select__control-down{
     display: inline-block;
     padding: 10px;
 }
-.sort__control a:hover svg {
+.select__control-up:hover svg,
+.select__control-down:hover svg{
     fill: rgba(0, 0, 0, 0.5);
 }
-.sort__control a:focus {
+.sort__control .select__control-up:focus,
+.select__control-down:focus {
     outline: 5px solid #af4fff;
 }
 .select__control-up {
