@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Девайс</title>
-  <link rel="icon" href="img/favicon32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Rubik:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
@@ -17,16 +17,18 @@
     <div class="container">
       <div class="header__main resizing">
         <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-        <img class="header__logo" src="img/device-logo.svg" alt="Логотип интернет-магазина DEVICE" width="145"
-          height="36">
+        <a class="header__device" href="index.html">
+          <img class="header__logo" src="img/device-logo.svg" alt="Логотип интернет-магазина DEVICE" width="145"
+            height="36">
+        </a>
         <ul class="header__nav list-style-reset">
           <li class="header__nav-list">
             <form class="form__search form__active" action="https://echo.htmlacademy.ru/">
-              <label class="form-search__label" for="search">
-                <input class="search__field" type="search" name="search" id="search" placeholder="Поиск по сайту">
-              </label>
+              <label class="form-search__label" for="search"></label>
+              <input class="search__field" type="search" name="search" id="search" placeholder="Поиск по сайту"
+                required>
               <!-- кнопка активности поля поиска -->
-              <button class="search__button search__button-active" type="submit">Найти</button>
+              <button class="search__button" type="submit">Найти</button>
             </form>
           </li>
           <li class="header__nav-list">
@@ -44,7 +46,7 @@
               <ul class="popup__items list-style-reset">
                 <li class="popup__item">
                   <a class="popup__item-link" href="#">
-                    <img class="popup__product" src="img/cart/product-small1.jpg" alt="любительская селфи-палка"
+                    <img class="popup__product" src="img/cart/amateur-self.jpg" alt="любительская селфи-палка"
                       width="41" height="43">
                     <p class="popup__description">Любительская <br> селфи-палка</p>
                   </a>
@@ -54,8 +56,8 @@
                 </li>
                 <li class="popup__item">
                   <a class="popup__item-link" href="#">
-                    <img class="popup__product" src="img/cart/product-small2.jpg" alt="любительская селфи-палка"
-                      width="41" height="43">
+                    <img class="popup__product" src="img/cart/prof-self.jpg" alt="любительская селфи-палка" width="41"
+                      height="43">
                     <p class="popup__description">Профессиональная селфи-палка</p>
                   </a>
                   <button class="removing-button" type="button">
@@ -136,7 +138,7 @@
             <a class="breadcrumbs__link" href="#">Каталог товаров</a>
           </li>
           <li class="bredcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Моноподы для селфи</a>
+            <a class="breadcrumbs__link">Моноподы для селфи</a>
           </li>
         </ul>
       </header>
@@ -257,7 +259,7 @@
             <ul class="product-list list-style-reset">
               <li class="product__card">
                 <a class="product__card-link" href="product.html">
-                  <img class="product__card-image" src="img/catalog/product-1.jpg" alt="Селфи-палка" width="360"
+                  <img class="product__card-image" src="img/catalog/amateur-self-big.jpg" alt="Селфи-палка" width="360"
                     height="380">
                   <div class="product__card-description">
                     <h3 class="product__card-title">Любительская селфи-палка</h3>
@@ -268,8 +270,8 @@
               </li>
               <li class="product__card">
                 <a class="product__card-link" href="product.html">
-                  <img class="product__card-image" src="img/catalog/product-2.jpg" alt="Профессиональная селфи-палка"
-                    width="360" height="380">
+                  <img class="product__card-image" src="img/catalog/prof-self-big.jpg"
+                    alt="Профессиональная селфи-палка" width="360" height="380">
                   <div class="product__card-description">
                     <h3 class="product__card-title">Профессиональная <br> селфи-палка</h3>
                     <b class="product-card-price">1 500 ₽</b>
@@ -279,7 +281,7 @@
               </li>
               <li class="product__card">
                 <a class="product__card-link" href="product.html">
-                  <img class="product__card-image" src="img/catalog/product-3.jpg" alt="Непотопляемая селфи-палка"
+                  <img class="product__card-image" src="img/catalog/unsinkable-self.jpg" alt="Непотопляемая селфи-палка"
                     width="360" height="380">
                   <div class="product__card-description">
                     <h3 class="product__card-title">Непотопляемая
@@ -292,7 +294,7 @@
               </li>
               <li class="product__card product__card-new">
                 <a class="product__card-link" href="product.html">
-                  <img class="product__card-image" src="img/catalog/product-4.jpg" alt="Селфи-палка «Следуй за мной»"
+                  <img class="product__card-image" src="img/catalog/folow-self.jpg" alt="Селфи-палка «Следуй за мной»"
                     width="360" height="380">
                   <div class="product__card-description">
                     <h3 class="product__card-title">Селфи-палка «Следуй за мной»</h3>
