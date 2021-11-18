@@ -1689,6 +1689,9 @@ body {
 .control__input[type="checkbox"]:checked + .control__label::after {
     display: block;
 }
+.control__input[type="radio"]:checked + .control::before{
+    opacity: 1;
+}
 .control__input[type="checkbox"]:not(:checked) + .control__label::before,
 .control__input[type="radio"]:hover + .control::before {
     opacity: 0.2;
