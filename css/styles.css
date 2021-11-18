@@ -35,10 +35,6 @@ html {
 *::before {
     box-sizing: inherit;
 }
-a {
-    text-decoration: none;
-    color: inherit;
-}
 img {
     max-width: 100%;
     object-fit: contain;
@@ -70,6 +66,7 @@ img {
     background: none;
     cursor: pointer;
     outline: none;
+    text-decoration: none;
     margin-bottom: 10px;
 }
 body {
@@ -148,6 +145,8 @@ body {
 .footer-menu__item-link,
 .products__item-link {
     outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 .form__search {
     position: relative;
@@ -317,7 +316,7 @@ body {
     width: 131px;
     height: 42px;
     left: 0;
-    top: -11px;
+    top: -2px;
 }
 .header__comparison:hover,
 .header__login:hover,
@@ -397,6 +396,8 @@ body {
     position: relative;
     display: flex;
     outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 .popup__item-link::before {
     content: "";
@@ -520,6 +521,8 @@ body {
     letter-spacing: 0.2em;
     text-align: center;
     outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 .popup__cart-button:hover {
     background-color: #ffe17f;
@@ -542,6 +545,9 @@ body {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
 }
 .menu__item:first-child {
     position: relative;
@@ -983,6 +989,8 @@ body {
     margin: 0 auto;
     outline: none;
     padding: 10px 15px;
+    text-decoration: none;
+    color: inherit;
 }
 .services__title-item::before {
     content: "";
@@ -1073,7 +1081,6 @@ body {
     padding-top: 5px;
     margin: 0 33px 0 50px;
 }
-
 .company-info {
     margin-bottom: 60px;
 }
@@ -1178,10 +1185,13 @@ body {
 .contacts__adress {
     margin: 0;
 }
+.contacts__phone {
+    text-decoration: none;
+    color: inherit;
+}
 .contacts__schedule {
     margin-bottom: 52px;
 }
-
 .distribution {
     background-color: #f0f0f0;
     padding-top: 78px;
@@ -1189,9 +1199,8 @@ body {
 }
 .distribution__mail {
     display: flex;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
 }
-
 .distribution__description {
     width: 560px;
     margin: 10px 0 0 auto;
@@ -1211,7 +1220,7 @@ body {
     border: none;
     background: none;
     border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-    padding: 16px 2px 10px 2px;
+    padding: 12px 2px 10px 2px;
     width: 601px;
     outline: none;
 }
@@ -1219,11 +1228,11 @@ body {
     border-color: rgba(0, 0, 0, 0.2);
 }
 .distribution__input:focus {
-    background: #dcdcdc;
+    background-color: #dcdcdc;
     border: none;
-    padding: 16px 2px 15px 2px;
+    border-bottom: 3px solid transparent;
+    padding: 12px 2px 10px 2px;
 }
-
 /* состояние "активность" поля ввода email */
 .distribution__input-active {
     border-color: #000;
@@ -1273,10 +1282,10 @@ body {
 .footer {
     color: #fff;
     background-color: #444444;
-    padding: 60px 0;
+    padding: 61px 0;
 }
 .footer__logo {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 .footer__wrapper {
     display: flex;
@@ -1331,6 +1340,8 @@ body {
     margin-left: auto;
     font-size: 16px;
     outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 .footer-contacts__phone:hover {
     color: #ffc700;
@@ -1436,11 +1447,6 @@ body {
 .catalog__title {
     margin-bottom: 18px;
 }
-.inner__content {
-    /* background-image: linear-gradient(to right, #DCDCDC 33.5%, #EBEBEB 33%), linear-gradient(to right, #EBEBEB 33.5%, transparent 33%);
-    background-size: 100% 70px, 100% 100%;
-    background-repeat: no-repeat; */
-}
 .catalog__products {
     display: flex;
 }
@@ -1477,6 +1483,7 @@ body {
     color: rgba(0, 0, 0, 0.6);
     padding: 5px 12px;
     border: 5px solid transparent;
+    text-decoration: none;
 }
 .breadcrumbs__link:hover {
     color: #000;
@@ -1671,7 +1678,8 @@ body {
 .control__input[type="radio"]:checked:hover + .control {
     opacity: 0.5;
 }
-.control__input[type="radio"]:not(:checked):hover .control::before {
+.control__input[type="radio"]:not(:checked):hover .control::before,
+.control__input[type="radio"] + .control::before {
     opacity: 0.2;
 }
 .control__input[type="checkbox"]:focus + .control__label::before,
@@ -1872,6 +1880,8 @@ body {
 }
 .product__card-link {
     outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 .product__card-link:focus .product__card-image {
     outline: 5px solid #af4fff;
@@ -1985,6 +1995,8 @@ body {
     border: 5px solid transparent;
     padding: 8px 15px;
     outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 .pagination__link:hover {
     color: #000;
