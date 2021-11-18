@@ -358,7 +358,7 @@ body {
 }
 .popup__basket:hover .popup__cart,
 .popup__basket:focus-within .popup__cart {
-    visibility: visible;
+    display: block;
 }
 .popup__cart {
     position: absolute;
@@ -369,7 +369,7 @@ body {
     padding: 20px;
     z-index: 5;
     box-shadow: 0 10px 0 #e5e5e5;
-    visibility: hidden;
+    display: none;
 }
 .popup__cart::before {
     content: "";
