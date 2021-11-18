@@ -1282,14 +1282,33 @@ body {
 .footer {
     color: #fff;
     background-color: #444444;
-    padding: 61px 0;
+    padding: 57px 0;
+}
+.footer__device {
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    width: 145px;
+    height: 36px;
+    border: 2px solid transparent;
+    padding: 3px 0 39px 0;
+}
+.footer__device:hover {
+    opacity: 0.6;
+}
+.footer__device:focus {
+    border-color: #af4fff;
+}
+.footer__device:active {
+    opacity: 0.3;
 }
 .footer__logo {
     margin-bottom: 28px;
+    margin-left: -2px;
 }
 .footer__wrapper {
     display: flex;
-    margin-bottom: 49px;
+    margin-bottom: 46px;
 }
 .footer__adress {
     font-size: 16px;
