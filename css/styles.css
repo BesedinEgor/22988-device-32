@@ -1295,7 +1295,7 @@ body {
     opacity: 0.6;
 }
 .footer__device:focus::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 165px;
     height: 56px;
@@ -1697,11 +1697,11 @@ body {
 }
 .control__input[type="checkbox"]:not(:checked) + .control__label::before,
 .control__input[type="radio"]:hover + .control::before,
-.control__input[type="radio"]:not(:checked) + .control::before  {
+.control__input[type="radio"]:not(:checked) + .control::before {
     opacity: 0.2;
 }
 .control__input[type="checkbox"]:checked:hover + .control__label,
-.control__input[type="radio"]:checked:hover + .control{
+.control__input[type="radio"]:checked:hover + .control {
     opacity: 0.5;
 }
 .control__input[type="radio"]:not(:checked):hover .control::before {
