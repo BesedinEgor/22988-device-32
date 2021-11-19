@@ -72,7 +72,7 @@ img {
 body {
     display: flex;
     flex-direction: column;
-    min-width: 1160px;
+    min-width: 1180px;
     min-height: 100%;
     margin: 0 auto;
     font-family: "rubik", sans-serif;
@@ -358,7 +358,7 @@ body {
 }
 .popup__basket:hover .popup__cart,
 .popup__basket:focus-within .popup__cart {
-    visibility: visible;
+    display: block;
 }
 .popup__cart {
     position: absolute;
@@ -369,7 +369,7 @@ body {
     padding: 20px;
     z-index: 5;
     box-shadow: 0 10px 0 #e5e5e5;
-    visibility: hidden;
+    display: none;
 }
 .popup__cart::before {
     content: "";
@@ -1282,22 +1282,28 @@ body {
 .footer {
     color: #fff;
     background-color: #444444;
-    padding: 57px 0;
+    padding: 61px 0;
 }
 .footer__device {
+    position: relative;
     display: inline-block;
+    height: 40px;
+    cursor: pointer;
     outline: none;
-    border-radius: 20px;
-    width: 145px;
-    height: 36px;
-    border: 2px solid transparent;
-    padding: 3px 0 39px 0;
 }
 .footer__device:hover {
     opacity: 0.6;
 }
-.footer__device:focus {
-    border-color: #af4fff;
+.footer__device:focus::before {
+    content: '';
+    position: absolute;
+    width: 165px;
+    height: 56px;
+    top: 50%;
+    left: -12px;
+    transform: translateY(-50%);
+    border: 2px solid #af4fff;
+    border-radius: 20px;
 }
 .footer__device:active {
     opacity: 0.3;
@@ -1308,7 +1314,7 @@ body {
 }
 .footer__wrapper {
     display: flex;
-    margin-bottom: 46px;
+    margin-bottom: 49px;
 }
 .footer__adress {
     font-size: 16px;
