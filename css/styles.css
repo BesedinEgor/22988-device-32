@@ -1620,6 +1620,7 @@ body {
 }
 .catalog-filter__label {
     display: flex;
+    align-items: center;
     margin-right: 30px;
     margin-left: -5px;
 }
