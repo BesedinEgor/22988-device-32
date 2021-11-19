@@ -1611,7 +1611,7 @@ body {
     letter-spacing: 0;
 }
 .catalog__filter-group {
-    margin-bottom: 33px;
+    margin-bottom: 34px;
 }
 
 .filter-input__wrapper {
@@ -1675,8 +1675,8 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    top: 0;
-    left: 2px;
+    top: -2px;
+    left: 3px;
     border: 2px solid #000;
     border-radius: 3px;
 }
@@ -1685,8 +1685,8 @@ body {
     position: absolute;
     width: 10px;
     height: 10px;
-    top: 5px;
-    left: 7px;
+    top: 3px;
+    left: 8px;
     background-image: url("../img/check-marker.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -1695,19 +1695,16 @@ body {
 .control__input[type="checkbox"]:checked + .control__label::after {
     display: block;
 }
-.control__input[type="radio"]:checked + .control::before{
-    opacity: 1;
-}
 .control__input[type="checkbox"]:not(:checked) + .control__label::before,
-.control__input[type="radio"]:hover + .control::before {
+.control__input[type="radio"]:hover + .control::before,
+.control__input[type="radio"]:not(:checked) + .control::before  {
     opacity: 0.2;
 }
 .control__input[type="checkbox"]:checked:hover + .control__label,
-.control__input[type="radio"]:checked:hover + .control {
+.control__input[type="radio"]:checked:hover + .control{
     opacity: 0.5;
 }
-.control__input[type="radio"]:not(:checked):hover .control::before,
-.control__input[type="radio"] + .control::before {
+.control__input[type="radio"]:not(:checked):hover .control::before {
     opacity: 0.2;
 }
 .control__input[type="checkbox"]:focus + .control__label::before,
@@ -1749,8 +1746,8 @@ body {
     border-radius: 50%;
     width: 8px;
     height: 8px;
-    left: 8px;
-    top: 6px;
+    left: 9px;
+    top: 4px;
     background-color: #000;
     display: none;
 }
@@ -1821,7 +1818,7 @@ body {
     outline: none;
     border: none;
     background: transparent;
-    padding: 5px 38px 5px 13px;
+    padding: 5px 38px 5px 11px;
     border: 5px solid transparent;
     appearance: none;
     background-image: url("../img/dropdown.svg");
