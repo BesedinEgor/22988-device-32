@@ -694,6 +694,7 @@ body {
 .sub-menu__item-link:active {
     color: rgba(0, 0, 0, 0.3);
 }
+/* -----------SLIDER----------- */
 .title {
     font-family: "raleway", sans-serif;
     font-weight: 800;
@@ -709,40 +710,51 @@ body {
 .slider__inner {
     position: relative;
 }
-.slider__element-wrapper {
-    position: absolute;
-    width: 560px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    top: 230px;
+.slider__items {
+    margin-top: -150px;
+    counter-reset: slider-counter;
 }
-.slider__button {
+.slider__item.slick-slide {
+    display: flex;
+}
+.slick-arrow {
+    position: absolute;
     display: block;
     width: 40px;
     height: 80px;
     border: 2px solid transparent;
     border-radius: 6px;
     background: none;
+    border: none;
     background-image: url("../img/slider/slider-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     outline: none;
+    font-size: 0;
+    z-index: 1;
 }
-.slider__button:hover {
+.slick-arrow:hover {
     opacity: 0.6;
 }
-.slider__button:focus {
+.slick-arrow:focus {
     border-color: #af4fff;
 }
-.slider__button:active {
+.slick-arrow:active {
     opacity: 0.3;
 }
-.slider__next {
+.slick-prev {
+    position: absolute;
+    top: 242px;
+    left: 10px;
+}
+.slick-next {
+    position: absolute;
+    left: 511px;
+    bottom: 239px;
     transform: rotate(180deg);
 }
-.slider__pagination {
+ul.slick-dots {
     position: absolute;
     display: flex;
     align-items: center;
@@ -751,8 +763,9 @@ body {
     bottom: 182px;
     gap: 22px;
     z-index: 3;
+    list-style: none;
 }
-.slider__pagination-button {
+.slick-dots button {
     display: block;
     width: 12px;
     height: 12px;
@@ -763,22 +776,20 @@ body {
     padding: 0;
     cursor: pointer;
     outline: none;
+    font-size: 0;
+    background: none;
 }
-.slider__pagination-button:hover {
+.slick-dots button:hover {
     opacity: 0.6;
 }
-.slider__pagination-button:focus {
+.slick-dots button:focus {
     border-color: #af4fff;
 }
-.slider__pagination-button:active {
+.slick-dots button:active {
     opacity: 0.3;
 }
-.slider__pagination-active {
+.slick-active button {
     background-color: #000;
-}
-.slider__items {
-    margin-top: -150px;
-    counter-reset: slider-counter;
 }
 .slider__item {
     display: flex;
@@ -858,6 +869,7 @@ body {
     color: #000;
     margin-bottom: 70px;
 }
+/* -----------END SLIDER----------- */
 .products__list {
     display: grid;
     grid-template-columns: repeat(6, 160px);
