@@ -81,6 +81,7 @@ body {
     line-height: 30px;
     color: #444444;
     background-color: #fff;
+    scroll-behavior: smooth;
 }
 .visually-hidden {
     position: absolute;
@@ -107,6 +108,27 @@ body {
 .resizing {
     background: linear-gradient(to top, #ffe17f 82%, #fff 82%, #fff 18%);
     padding-bottom: 16px;
+}
+.up-button{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #ffe17f;
+    border-radius: 50%;
+    border: 3px solid #000;
+    right: 50px;
+    bottom: 50px;
+    opacity: .7;
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+    display: none;
+}
+.up-button:hover{
+    opacity: 1;
+}
+.shown{
+    display: inline-block;
 }
 .catalog-main {
     padding-top: 40px;
